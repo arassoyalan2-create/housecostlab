@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Cost Lab - Instant Cost Estimation</title>
+    <title>HouseCostLab - Instant Home Renovation & Construction Cost Estimator</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
+            background-color: #121212;
+            color: #e2e8f0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,54 +16,67 @@
             min-height: 100vh;
         }
         header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            padding: 1rem 2rem;
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #2d3748;
+            padding: 1.5rem 2rem;
             text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
-            font-size: 1.5rem;
-            color: #0f172a;
+            font-size: 1.8rem;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: #a0aec0;
+            font-size: 0.95rem;
         }
         main {
             flex: 1;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             padding: 2rem 1rem;
         }
         .container {
             width: 100%;
             max-width: 800px;
-            background: #ffffff;
+            background: #1a1a1a;
+            border: 1px solid #2d3748;
             border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
         footer {
+            background-color: #1e1e1e;
+            border-top: 1px solid #2d3748;
             text-align: center;
             padding: 1rem;
-            font-size: 0.875rem;
-            color: #64748b;
-            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #718096;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>HouseCostLab.com</h1>
+        <p>Instant Data-Driven Home Construction & Renovation Estimates</p>
     </header>
+
     <main>
         <div class="container">
-            <!-- Tally Form Embed Code Goes Here -->
-            <iframe data-tally-src="https://tally.so/embed/3yN0Qv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Home Cost Estimation"></iframe>
-            <script>window.Tally||(window.Tally={});if(!window.Tally.load){d=document,s="JS",u="tally.so/widgets/embed.js",v=function(){Tally.loadEmbeds();};if(typeof Tally.loadEmbeds=="T")v();else if(d.querySelector('script[src="'+u+'"]'))==null){s=d.createElement("script");s.src="https://"+u;s.async=!0;s.onload=v;s.onerror=v;d.body.appendChild(s);}}</script>
+            <iframe data-tally-src="https://tally.so/embed/mO5l7w?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="House Cost Estimator"></iframe>
         </div>
     </main>
+
     <footer>
         &copy; 2026 HouseCostLab.com. All rights reserved.
     </footer>
+
+    <script>
+        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="*"]"'))v();else{var s=d.createElement("script");s.src=w,s.onload=v,s.onerror  =v,d.body.appendChild(s);}
+    </script>
 </body>
 </html>
